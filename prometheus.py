@@ -42,7 +42,7 @@ def main():
 def get_error_metrics():
     metric_str = ""
     try:
-        f = open('/root/prometheus/overall_error_count_metric', 'r')
+        f = open('/root/prometheus/data/overall_error_count_metric', 'r')
         for metric_data in f:
             metric_data = metric_data.replace('\n', '')
             metric_data = metric_data.replace('\r', '')
